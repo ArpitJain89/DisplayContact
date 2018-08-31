@@ -1,0 +1,56 @@
+<div class="jumbotron">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 offset-md-3">
+				<h3>{{buttonName}} Contact</h3>
+				<form name="form" (ngSubmit)="f.form.valid && onSubmit()" #f="ngForm" novalidate>
+					<div class="form-group">
+						<label for="firstName">First Name</label>
+						<input type="text" class="form-control" name="firstName" [(ngModel)]="model.fname" #firstName="ngModel" [ngClass]="{ 'is-invalid': f.submitted && firstName.invalid }"
+						 required />
+						<div *ngIf="f.submitted && firstName.invalid" class="invalid-feedback">
+							<div *ngIf="firstName.errors.required">First Name is required</div>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="lastName">Last Name</label>
+						<input type="text" class="form-control" name="lastName" [(ngModel)]="model.lname" #lastName="ngModel" [ngClass]="{ 'is-invalid': f.submitted && lastName.invalid }"
+						 required />
+						<div *ngIf="f.submitted && lastName.invalid" class="invalid-feedback">
+							<div *ngIf="lastName.errors.required">Last Name is required</div>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="email">Email</label>
+						<input type="text" class="form-control" name="email" [(ngModel)]="model.email" #email="ngModel" [ngClass]="{ 'is-invalid': f.submitted && email.invalid }"
+						 required email />
+						<div *ngIf="f.submitted && email.invalid" class="invalid-feedback">
+							<div *ngIf="email.errors.required">Email is required</div>
+							<div *ngIf="email.errors.email">Email must be a valid email address</div>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="number">Number</label>
+						<input type="text" class="form-control" name="number" [(ngModel)]="model.number" #number="ngModel" [ngClass]="{ 'is-invalid': f.submitted && number.invalid }"
+						 required minlength="10" />
+						<div *ngIf="f.submitted && number.invalid" class="invalid-feedback">
+							<div *ngIf="number.errors.required">Number is required</div>
+							<div *ngIf="number.errors.minlength">Number must be at least 10 characters</div>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="status">Status</label>
+						<input type="text" class="form-control" name="status" [(ngModel)]="model.status" #status="ngModel" [ngClass]="{ 'is-invalid': f.submitted && status.invalid }"
+						 required />
+						<div *ngIf="f.submitted && status.invalid" class="invalid-feedback">
+							<div *ngIf="status.errors.required">status is required</div>
+						</div>
+					</div>
+					<div class="form-group">
+						<button class="btn btn-primary">{{buttonName | uppercase}}</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>

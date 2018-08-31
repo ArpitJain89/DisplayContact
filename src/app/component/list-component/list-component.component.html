@@ -1,0 +1,27 @@
+<div class="jumbotron">
+	<div *ngFor="let contact of contactObject" class="card border-primary  mb-5 m-auto col-sm-12 col-md-10 col-lg-6">
+		<div class="userDisplay">
+			<div class="userPhoto">
+				<img src="../../../assets/user.png" alt="Avatar">
+			</div>
+			<div class="userInfo">
+				<div class="userName">
+					<h3>{{contact.fname}} {{ contact.lname}}</h3>
+				</div>
+				<div class="userId">
+					<label>Email Id : </label> {{ contact.email}}
+				</div>
+				<div class="userContent">
+					<label>Number : </label> {{ contact.number}}
+				</div>
+				<div class="userStatus">
+					<label>Status : </label>{{ contact.status}}
+				</div>
+			</div>
+			<div class="detailsButton">
+				<button class="btn btn-primary" (click)="updateItem(contact)">Edit</button>
+				<button class="btn btn-danger" (click)="deleteItem(contact)">Delete</button>
+			</div>
+		</div>
+	</div>
+</div>
