@@ -1,60 +1,52 @@
 {
-  "contact": [
-    {
-      "id": 2,
-      "fname": "Ankit",
-      "lname": "Chavan",
-      "email": "vishal@gmail.com",
-      "number": "8888888888",
-      "status": "false"
-    },
-    {
-      "fname": "Samkit ",
-      "lname": "Jain",
-      "email": "sam@gmail.com",
-      "number": "9878987656",
-      "status": "false",
-      "id": 3
-    },
-    {
-      "fname": "SURAJ",
-      "lname": "SENGAR",
-      "email": "arpitjain49@gmail.com",
-      "number": "8888888888",
-      "status": "false",
-      "id": 4
-    },
-    {
-      "fname": "Akash",
-      "lname": "Bhargava",
-      "email": "akku@gmail.com",
-      "number": "892358727862",
-      "status": "false",
-      "id": 5
-    },
-    {
-      "fname": "Arpit",
-      "lname": "Jain",
-      "email": "arpitjain49@gmail.com",
-      "number": "8888888888",
-      "status": "false",
-      "id": 6
-    },
-    {
-      "fname": "Charul",
-      "lname": "Jain",
-      "email": "arpitjain49@gmail.com",
-      "number": "9878987656",
-      "status": "true",
-      "id": 7
-    },
-    {
-      "fname": "Priyanshu",
-      "lname": "Jain",
-      "email": "arpitjain49@gmail.com",
-      "number": "3333333333",
-      "status": "true",
-      "id": 8
-    }
-  ]
+	"contact": [
+		{
+			"fname": "Arpit",
+			"lname": "Jain",
+			"email": "arpitjain49@gmail.com",
+			"number": "7276389636",
+			"status": "true",
+			"id": 1
+		},
+		{
+			"fname": "Vishal ",
+			"lname": "Chavan",
+			"email": "vishal@gmail.com",
+			"number": "9867874567",
+			"status": "false",
+			"id": 2
+		},
+		{
+			"fname": "Suraj",
+			"lname": "Sengar",
+			"email": "suraj@gmail.com",
+			"number": "9876425611",
+			"status": "false",
+			"id": 3
+		},
+		{
+			"fname": "Akash",
+			"lname": "Bhargava",
+			"email": "akash@gmail.com",
+			"number": "8923587278",
+			"status": "false",
+			"id": 4
+		},
+		{
+			"fname": "Swapnil",
+			"lname": "Desai",
+			"email": "swapnil@gmail.com",
+			"number": "8998645654",
+			"status": "false",
+			"id": 5
+		},
+		{
+			"fname": "Priyanshu",
+			"lname": "Jain",
+			"email": "priyanshu@gmail.com",
+			"number": "9872535622",
+			"status": "true",
+			"id": 6
+		}
+	]
 }
